@@ -1,0 +1,149 @@
+                    /* body styles*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: #011936; */
+  /* background-color: #000; */
+  background-color: #ED254E;
+  color: #F4FFFD;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.9;
+  box-sizing: border-box;
+
+  /* animation-timing-function: ease-in; */
+}
+
+                    /* font color : yellow */
+#career-summary strong,
+#career-experiences strong,
+#education strong,
+h1,
+h2,
+a {
+  color: #F9DC5C;
+  font-size: 16px;
+}
+
+                    /* everything with padding: 30px */
+header,
+section,
+footer
+{
+  padding: 30px;
+}
+
+
+                    /* display all list in one line */
+li {
+  display: inline;
+}
+
+span {
+  padding: 5px;
+}
+
+                    /* removed default text decoration in all lists */
+a {
+  text-decoration: none;
+  padding: 0;
+}
+
+                    /* mouse over styles */
+a:hover {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #F4FFFD;
+  border-bottom: 1px solid #F9DC5C;
+}
+
+                    /* header styles */
+header {
+  height: 20%;
+  text-align: center;
+  border-bottom: 1px solid #F4FFFD;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+                    /* section styles */
+section {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  position: relative;
+
+  animation: smoothIn 2s ease-in;
+}
+
+                    /* images styles */
+section img {
+  width: 30%;
+  float: right;
+  border: 1px solid #F4FFFD;
+  padding: 10px;
+}
+
+                    /*  style for all paragraphes*/
+p {
+  /* float: left; */
+  width: 65%;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+/*  */
+#career-summary{
+  height: 120px;
+}
+
+#career-summary p {
+  width: 100%;
+  text-align: justify;
+}
+#experiences ul li {
+  display: block;
+  list-style-type: square;
+}
+
+#education {
+  height: 170px;
+}
+
+#education ul li {
+  display: block;
+}
+
+#career-experiences {
+  height: 550px;
+}
+
+#career-experiences ul li,
+#education ul li {
+  display: list-item;
+  list-style-type: square;
+}
+
+                    /*  footer styles*/
+footer {
+  text-align: center;
+  border-top: 1px solid #F4FFFD;
+}
+
+
+/*  */
+@keyframes smoothIn {
+  0% {
+    left: -2000px;
+    /* top: -1000px; */
+    opacity: 0
+  }
+  100% {
+    left: 0;
+    /* top: 0; */
+    opacity: 1
+  }
+}
